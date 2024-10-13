@@ -1,0 +1,14 @@
+replicaCount: 1
+
+app:
+  name: my-app
+
+image:
+  repository: vigneshdockerimgaes/nextjs-app
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 3001
+  targetPort: 3001
